@@ -216,7 +216,29 @@ export async function generatePaths(
     });
 
     const parsed = JSON.parse(response.output_text);
-    return parsed;
+
+    // Safeguard: deduplicate paths by strategy_key. If duplicates found,
+    // keep the first occurrence of each key and pad with fallback paths.
+    const seen = new Set<string>();
+    const uniquePaths: typeof parsed.paths = [];
+    for (const p of parsed.paths) {
+      if (!seen.has(p.strategy_key)) {
+        seen.add(p.strategy_key);
+        uniquePaths.push(p);
+      }
+    }
+    if (uniquePaths.length < 3) {
+      // Pad with fallback paths that use different strategy_keys
+      const fallback = getFallbackPaths(profile);
+      for (const fp of fallback.paths) {
+        if (uniquePaths.length >= 3) break;
+        if (!seen.has(fp.strategy_key)) {
+          seen.add(fp.strategy_key);
+          uniquePaths.push(fp);
+        }
+      }
+    }
+    return { paths: uniquePaths.slice(0, 3) };
   } catch (err) {
     console.error('OpenAI paths error, using fallback:', (err as Error).message);
     return getFallbackPaths(profile);

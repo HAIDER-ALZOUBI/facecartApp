@@ -2,25 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-accent: #7BAA8F;
+    --color-surface: #F3F2EE;
+    --color-bg: #FAF9F6;
+    --divider: rgba(26, 26, 26, 0.08);
+    --radius-card: 1.25rem;
+  }
+
+  h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.05; letter-spacing: -0.025em; }
+  h2 { font-size: 2.5rem; font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; }
+  h3 { font-size: 1.875rem; font-weight: 600; line-height: 1.15; letter-spacing: -0.015em; }
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth transitions for interactive elements */
+button, a, input, textarea, select {
+  transition: all 0.15s ease;
 }
 
 .high-contrast {
-  --tw-bg-opacity: 1;
   filter: contrast(1.25);
 }
 
-.high-contrast .bg-white {
+.high-contrast .bg-white,
+.high-contrast .bg-cream {
   background-color: #fff;
   border-color: #000;
 }
 
-.high-contrast .text-gray-500 {
+.high-contrast .text-muted {
   color: #333;
 }
 
 .high-contrast .text-gray-400 {
   color: #444;
+}
+
+/* Tooltip animation */
+@keyframes tooltip-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-tooltip {
+  animation: tooltip-in 0.15s ease-out;
+}
+
+/* Pulse for analyzing state */
+@keyframes soft-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+.animate-soft-pulse {
+  animation: soft-pulse 2s ease-in-out infinite;
+}
+
+/* Page/section fade-in */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+/* Button press feedback */
+.active\:press:active {
+  transform: scale(0.97);
+}
+
+/* Divider utility */
+.divider {
+  height: 1px;
+  background: var(--divider);
+}
+
+/* Scrollbar styling for modals/pickers */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
 }

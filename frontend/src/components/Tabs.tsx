@@ -11,17 +11,17 @@ export default function Tabs() {
   const location = useLocation();
 
   return (
-    <nav className="flex border-b border-gray-200 bg-white" aria-label="Main navigation">
+    <nav className="flex border-b border-sand/30 bg-cream" aria-label="Main navigation">
       {TABS.map((tab) => {
         const active = location.pathname === tab.path;
         return (
           <button
             key={tab.path}
             onClick={() => navigate(tab.path)}
-            className={`flex-1 py-3 px-4 text-sm font-medium text-center transition-colors ${
+            className={`flex-1 py-4 px-4 text-base font-medium text-center transition-colors ${
               active
-                ? 'text-brand-600 border-b-2 border-brand-600 bg-brand-50'
-                : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                ? 'text-brand-600 border-b-2 border-brand-500 bg-brand-50/50'
+                : 'text-muted hover:text-ink hover:bg-beige/50'
             }`}
             aria-current={active ? 'page' : undefined}
           >

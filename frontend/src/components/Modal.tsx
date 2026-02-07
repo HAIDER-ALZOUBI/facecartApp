@@ -24,7 +24,7 @@ export default function Modal({ open, onClose, title, children }: ModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/30 backdrop-blur-sm p-4"
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       role="dialog"
       aria-modal="true"
@@ -32,13 +32,13 @@ export default function Modal({ open, onClose, title, children }: ModalProps) {
     >
       <div
         ref={ref}
-        className="bg-white rounded-xl shadow-2xl max-w-md w-full max-h-[80vh] overflow-y-auto p-6"
+        className="bg-cream rounded-3xl shadow-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto p-8 animate-fade-in"
       >
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold">{title}</h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold text-ink pr-4">{title}</h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-700 text-2xl leading-none p-1"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-beige text-muted hover:text-ink hover:bg-sand text-xl leading-none transition-colors active:press shrink-0"
             aria-label="Close"
           >
             &times;

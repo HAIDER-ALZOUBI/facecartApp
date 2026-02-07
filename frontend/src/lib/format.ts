@@ -22,26 +22,26 @@ export function formatRisk(risk: string): string {
 export function riskColor(risk: string): string {
   switch (risk) {
     case 'low':
-      return 'text-green-600 bg-green-100';
+      return 'text-emerald-700 bg-emerald-50 border border-emerald-200';
     case 'medium':
     case 'moderate':
-      return 'text-yellow-700 bg-yellow-100';
+      return 'text-amber-700 bg-amber-50 border border-amber-200';
     case 'high':
     case 'elevated':
-      return 'text-red-600 bg-red-100';
+      return 'text-rose-700 bg-rose-50 border border-rose-200';
     default:
-      return 'text-gray-600 bg-gray-100';
+      return 'text-muted bg-beige border border-sand';
   }
 }
 
 export function scoreColor(score: number): string {
-  if (score >= 70) return 'bg-green-500';
-  if (score >= 40) return 'bg-yellow-500';
-  return 'bg-red-500';
+  if (score >= 70) return 'bg-emerald-500';
+  if (score >= 40) return 'bg-amber-400';
+  return 'bg-rose-400';
 }
 
 export function scoreTextColor(score: number): string {
-  if (score >= 70) return 'text-green-700';
-  if (score >= 40) return 'text-yellow-700';
-  return 'text-red-700';
+  if (score >= 70) return 'text-emerald-700';
+  if (score >= 40) return 'text-amber-700';
+  return 'text-rose-700';
 }

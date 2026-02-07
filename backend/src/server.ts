@@ -1,51 +1,56 @@
 import dotenv from "dotenv";
 import path from "path";
 
-// Always load env relative to the *backend working directory*
+// Load env relative to the backend working directory (you run: cd backend && ...)
 dotenv.config({ path: path.resolve(process.cwd(), ".env") });
 dotenv.config({ path: path.resolve(process.cwd(), ".env.example") });
 
-
-import express from 'express';
-import cors from 'cors';
-import { requestLogger, errorHandler } from './utils/logger';
-import intakeRoutes from './routes/intake';
-import analysisRoutes from './routes/analysis';
-import productsRoutes from './routes/products';
-import routineRoutes from './routes/routine';
+import express from "express";
+import cors from "cors";
+import intakeRoutes from "./routes/intake";
+import analysisRoutes from "./routes/analysis";
+import productsRoutes from "./routes/products";
+import cartRoutes from "./routes/cart";
+import routineRoutes from "./routes/routine";
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = Number(process.env.PORT) || 5000;
 
 // Middleware
-app.use(cors());
-app.use(express.json({ limit: '10mb' })); // Allow large base64 images
-app.use(requestLogger);
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "http://localhost:5174"],
+    credentials: true,
+  })
+);
+app.use(express.json({ limit: "10mb" }));
 
 // API routes
-app.use('/api/intake', intakeRoutes);
-app.use('/api/analysis', analysisRoutes);
-app.use('/api/products', productsRoutes);
-app.use('/api/cart', productsRoutes); // /api/cart/swap uses same router
-app.use('/api/existing', productsRoutes); // /api/existing/check uses same router
-app.use('/api/routine', routineRoutes);
+app.use("/api/intake", intakeRoutes);
+app.use("/api/analysis", analysisRoutes);
+app.use("/api/products", productsRoutes);
+app.use("/api/cart", cartRoutes);
+app.use("/api/existing", productsRoutes);
+app.use("/api/routine", routineRoutes);
 
-// Error handler (must be after routes)
-app.use(errorHandler as any);
+// Quick health check
+app.get("/api/health", (_req, res) => res.json({ ok: true }));
 
-// Serve frontend build in production
-const frontendBuild = path.join(__dirname, '../../frontend/dist');
-app.use(express.static(frontendBuild));
-app.get('*', (_req, res) => {
-  res.sendFile(path.join(frontendBuild, 'index.html'));
-});
+// Serve frontend build ONLY in production
+if (process.env.NODE_ENV === "production") {
+  const frontendBuild = path.join(__dirname, "../../frontend/dist");
+  app.use(express.static(frontendBuild));
+  app.get("*", (_req, res) => {
+    res.sendFile(path.join(frontendBuild, "index.html"));
+  });
+}
 
 app.listen(PORT, () => {
+  const key = (process.env.OPENAI_API_KEY || "").trim();
+  const hasKey = key.length > 0 && key !== "your_key_here";
+
   console.log(`SkinSync API running on http://localhost:${PORT}`);
-  console.log(
-    `OpenAI: ${process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY !== 'your_key_here' ? 'configured' : 'not configured (using fallback)'}`
-  );
-  console.log(`Debug logs: ${process.env.DEBUG_LOGS === 'true' ? 'ENABLED' : 'disabled'}`);
+  console.log(`OpenAI: ${hasKey ? "configured" : "not configured (using fallback)"}`);
 });
 
 export default app;

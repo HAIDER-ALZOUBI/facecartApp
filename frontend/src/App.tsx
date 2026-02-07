@@ -1,6 +1,5 @@
+import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import { storage } from './lib/storage';
 import Intake from './routes/Intake';
 import Results from './routes/Results';
 import Routine from './routes/Routine';
@@ -9,35 +8,23 @@ import AddConcern from './routes/AddConcern';
 import ExistingProduct from './routes/ExistingProduct';
 import HowItWorks from './routes/HowItWorks';
 import DebugPanel from './components/DebugPanel';
+import SplashScreen from './components/SplashScreen';
+
+const SPLASH_KEY = 'skinsync_v1_seen_splash';
 
 export default function App() {
-  const [highContrast, setHighContrast] = useState(storage.getHighContrast());
+  const [showSplash, setShowSplash] = useState(
+    () => !localStorage.getItem(SPLASH_KEY)
+  );
 
-  useEffect(() => {
-    if (highContrast) {
-      document.body.classList.add('high-contrast');
-    } else {
-      document.body.classList.remove('high-contrast');
-    }
-  }, [highContrast]);
-
-  const toggleContrast = () => {
-    const next = !highContrast;
-    setHighContrast(next);
-    storage.setHighContrast(next);
+  const handleSplashDone = () => {
+    localStorage.setItem(SPLASH_KEY, 'true');
+    setShowSplash(false);
   };
 
   return (
     <div className="relative min-h-screen">
-      {/* High contrast toggle */}
-      <button
-        onClick={toggleContrast}
-        className="fixed top-2 right-2 z-50 text-xs px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 text-gray-700"
-        aria-label="Toggle high contrast mode"
-        title="Toggle high contrast"
-      >
-        {highContrast ? '◑ Normal' : '◐ High Contrast'}
-      </button>
+      {showSplash && <SplashScreen onDone={handleSplashDone} />}
 
       <Routes>
         <Route path="/" element={<Intake />} />

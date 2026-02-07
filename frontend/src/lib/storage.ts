@@ -73,7 +73,7 @@ export const storage = {
     const keys = [
       'profile', 'paths', 'path_previews', 'selected_path',
       'selected_by_step', 'budget', 'conflicts', 'history',
-      'allergies', 'cart_items', 'high_contrast',
+      'allergies', 'cart_items', 'high_contrast', 'seen_splash',
     ];
     keys.forEach((k) => remove(k));
   },

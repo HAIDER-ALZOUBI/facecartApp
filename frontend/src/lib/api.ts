@@ -12,6 +12,25 @@ function summarizeBody(body: unknown): unknown {
   return clone;
 }
 
+async function get<T>(path: string): Promise<T> {
+  const start = performance.now();
+  debugLog(`api:request`, { path, method: 'GET' });
+
+  const res = await fetch(`${BASE}${path}`);
+  const durationMs = Math.round(performance.now() - start);
+
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ error: 'Request failed' }));
+    debugError(`api:error`, { path, status: res.status, durationMs, error: err.error });
+    console.warn(`[API] GET ${path} failed: ${res.status}`, err);
+    throw new Error(err.error || `HTTP ${res.status}`);
+  }
+
+  const data = await res.json();
+  debugLog(`api:response`, { path, status: res.status, durationMs });
+  return data as T;
+}
+
 async function post<T>(path: string, body: unknown): Promise<T> {
   const start = performance.now();
   debugLog(`api:request`, { path, body: summarizeBody(body) });
@@ -28,6 +47,7 @@ async function post<T>(path: string, body: unknown): Promise<T> {
     const err = await res.json().catch(() => ({ error: 'Request failed' }));
     const requestId = err.requestId || 'unknown';
     debugError(`api:error`, { path, status: res.status, durationMs, requestId, error: err.error });
+    console.warn(`[API] POST ${path} failed: ${res.status}`, err);
     throw new Error(err.requestId
       ? `${err.error || 'Request failed'} (ID: ${err.requestId})`
       : (err.error || `HTTP ${res.status}`));
@@ -86,4 +106,31 @@ export const api = {
     existing: { name: string; step_type: string; key_ingredient: string };
     currentRoutine: any[];
   }) => post<any>('/existing/check', body),
+
+  cartValidate: (body: {
+    profile: any;
+    selectedPath: { strategy_key: string; risk_level: string };
+    selectedByStep: Record<string, string | undefined>;
+    budget: any;
+    allergies?: string[] | null;
+  }) => post<{
+    cart: any[];
+    routine: { am: any[]; pm: any[] };
+    conflicts: any[];
+    total: number;
+  }>('/cart/validate', body),
+
+  cartCatalog: () =>
+    get<{
+      products: Array<{
+        id: string;
+        name: string;
+        brand: string;
+        price: number;
+        category: string;
+        key_ingredients: string[];
+        rating: number;
+        fragrance_free: boolean;
+      }>;
+    }>('/cart/catalog'),
 };

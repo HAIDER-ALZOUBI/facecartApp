@@ -207,7 +207,8 @@ export function generateRoutine(
 export function generatePreview(
   profile: SkinContextProfile,
   pathInfo: { strategy_key: string; risk_level: string },
-  allergies?: string[] | null
+  allergies?: string[] | null,
+  excludeProductIds: string[] = []
 ) {
   const selectedPath: SelectedPath = {
     strategy_key: pathInfo.strategy_key,
@@ -220,7 +221,7 @@ export function generatePreview(
   const selectedProducts: Product[] = [];
 
   for (const step of steps) {
-    const item = selectBestForStep(step, profile, selectedPath, selectedProducts, budget, [], allergies);
+    const item = selectBestForStep(step, profile, selectedPath, selectedProducts, budget, excludeProductIds, allergies);
     if (item) {
       plan[step] = item;
       selectedProducts.push(item.product);
@@ -253,6 +254,105 @@ export function getOptionsForStep(
 
   const candidates = getProductsByCategory(step, allergies);
   return scoreAndRankProducts(candidates, profile, selectedPath, otherProducts, budget);
+}
+
+export function validateCart(
+  profile: SkinContextProfile,
+  selectedPath: SelectedPath,
+  selectedByStep: Record<string, string | null>,
+  budget: Budget,
+  allergies?: string[] | null
+): {
+  cart: RoutineItem[];
+  routine: { am: RoutineItem[]; pm: RoutineItem[] };
+  conflicts: any[];
+  total: number;
+} {
+  const allProducts = loadProducts();
+  const steps: StepType[] = ['cleanser', 'treatment', 'moisturizer', 'spf'];
+  const selectedItems: RoutineItem[] = [];
+
+  // First pass: look up each selected product and build basic RoutineItem
+  for (const step of steps) {
+    const productId = selectedByStep[step];
+    if (!productId) continue;
+
+    const product = allProducts.find((p) => p.id === productId);
+    if (!product) continue;
+
+    // Collect for scoring later
+    selectedItems.push({
+      step,
+      product,
+      score: 0,
+      score_breakdown: { ingredient_relevance: 0, sensitivity_match: 0, conflict_risk: 0, rating: 0, weighted_total: 0 },
+      why: [],
+      refill: computeRefill(product),
+    });
+  }
+
+  // Second pass: score each product against others in the cart
+  for (let i = 0; i < selectedItems.length; i++) {
+    const item = selectedItems[i];
+    const otherProducts = selectedItems
+      .filter((_, idx) => idx !== i)
+      .map((si) => si.product);
+
+    const breakdown = computeScore(item.product, profile, selectedPath, otherProducts);
+    const why = generateWhy(item.product, profile, selectedPath, breakdown);
+    item.product.buy_links = ensureBuyLinks(item.product.buy_links, item.product.name, item.product.brand);
+
+    item.score = breakdown.weighted_total;
+    item.score_breakdown = breakdown;
+    item.why = why;
+  }
+
+  // Detect conflicts
+  const conflicts = detectConflictsInRoutine(selectedItems);
+
+  // Check allergy violations and add as conflict-like findings
+  if (allergies && allergies.length > 0) {
+    for (const item of selectedItems) {
+      for (const allergy of allergies) {
+        const token = allergy.trim().toLowerCase();
+        if (!token) continue;
+        const inKey = item.product.key_ingredients.some((ki) => ki.toLowerCase().includes(token));
+        const inFull = item.product.full_ingredients.toLowerCase().includes(token);
+        if (inKey || inFull) {
+          conflicts.push({
+            pair: [token, item.product.name],
+            risk: 'high',
+            alert: `${item.product.name} contains "${allergy}" which is in your allergy list.`,
+            fix: `Remove this product or remove "${allergy}" from your allergies.`,
+            involvedProducts: [{ step: item.step, productId: item.product.id }],
+          });
+        }
+      }
+    }
+  }
+
+  // Build AM/PM routine
+  const cleanser = selectedItems.find((i) => i.step === 'cleanser');
+  const treatment = selectedItems.find((i) => i.step === 'treatment');
+  const moisturizer = selectedItems.find((i) => i.step === 'moisturizer');
+  const spf = selectedItems.find((i) => i.step === 'spf');
+
+  const am: RoutineItem[] = [];
+  const pm: RoutineItem[] = [];
+
+  if (cleanser) { am.push(cleanser); pm.push(cleanser); }
+  if (treatment) { am.push(treatment); pm.push(treatment); }
+  if (moisturizer) { am.push(moisturizer); pm.push(moisturizer); }
+  if (spf) { am.push(spf); }
+
+  const total = selectedItems.reduce((sum, item) => sum + item.product.price, 0);
+
+  return {
+    cart: selectedItems,
+    routine: { am, pm },
+    conflicts,
+    total: Math.round(total * 100) / 100,
+  };
 }
 
 export function swapProduct(

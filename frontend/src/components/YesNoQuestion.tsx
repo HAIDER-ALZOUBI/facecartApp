@@ -6,15 +6,15 @@ interface YesNoQuestionProps {
 
 export default function YesNoQuestion({ question, onAnswer, selected }: YesNoQuestionProps) {
   return (
-    <div className="space-y-4">
-      <p className="text-lg font-medium text-gray-800">{question}</p>
+    <div className="space-y-6">
+      <p className="text-[28px] font-semibold text-ink leading-snug tracking-tight">{question}</p>
       <div className="flex gap-3">
         <button
           onClick={() => onAnswer('yes')}
-          className={`flex-1 py-4 px-6 rounded-xl text-lg font-medium transition-all ${
+          className={`flex-1 py-5 px-6 rounded-full text-lg font-medium transition-all ${
             selected === 'yes'
-              ? 'bg-brand-500 text-white shadow-lg scale-105'
-              : 'bg-white border-2 border-gray-200 text-gray-700 hover:border-brand-300 hover:bg-brand-50'
+              ? 'bg-brand-500 text-white shadow-md scale-[1.02]'
+              : 'bg-white border border-sand text-ink hover:border-brand-400 hover:bg-brand-50'
           }`}
           aria-pressed={selected === 'yes'}
         >
@@ -22,10 +22,10 @@ export default function YesNoQuestion({ question, onAnswer, selected }: YesNoQue
         </button>
         <button
           onClick={() => onAnswer('no')}
-          className={`flex-1 py-4 px-6 rounded-xl text-lg font-medium transition-all ${
+          className={`flex-1 py-5 px-6 rounded-full text-lg font-medium transition-all ${
             selected === 'no'
-              ? 'bg-gray-700 text-white shadow-lg scale-105'
-              : 'bg-white border-2 border-gray-200 text-gray-700 hover:border-gray-400 hover:bg-gray-50'
+              ? 'bg-ink text-white shadow-md scale-[1.02]'
+              : 'bg-white border border-sand text-ink hover:border-ink/40 hover:bg-beige'
           }`}
           aria-pressed={selected === 'no'}
         >

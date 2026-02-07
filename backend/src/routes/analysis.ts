@@ -40,9 +40,22 @@ router.post('/preview', async (req: Request, res: Response) => {
 
     log('analysis:preview:start', { pathCount: paths.length, strategies: paths.map((p: any) => p.strategy_key) }, req);
 
-    const previews = paths.map((p: { strategy_key: string; risk_level: string }) =>
-      generatePreview(profile, p, allergies || null)
-    );
+    // Generate previews sequentially, tracking used product IDs to ensure
+    // each path selects different products (especially for treatment step).
+    const previews: any[] = [];
+    const usedProductIds: string[] = [];
+
+    for (const p of paths as Array<{ strategy_key: string; risk_level: string }>) {
+      const preview = generatePreview(profile, p, allergies || null, usedProductIds);
+      // Track all product IDs from this preview to force subsequent paths
+      // to pick different products
+      for (const item of Object.values(preview.plan) as any[]) {
+        if (item && item.product && item.product.id) {
+          usedProductIds.push(item.product.id);
+        }
+      }
+      previews.push(preview);
+    }
 
     log('analysis:preview:done', {
       previewTotals: previews.map((p: any) => ({ strategy: p.strategy_key, total: p.total, conflicts: p.conflicts.length })),

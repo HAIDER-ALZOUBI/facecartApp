@@ -4,7 +4,11 @@
       "Bash(node -e:*)",
       "Bash(npm install:*)",
       "Bash(npx jest --no-cache)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(npx vite build:*)",
+      "Bash(lsof:*)",
+      "Bash(curl:*)",
+      "Bash(ps:*)"
     ]
   }
 }

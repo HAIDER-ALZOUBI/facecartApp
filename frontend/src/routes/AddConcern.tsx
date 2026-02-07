@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api } from '../lib/api';
 import { storage } from '../lib/storage';
-import Tabs from '../components/Tabs';
+import TopNav from '../components/TopNav';
 
 export default function AddConcern() {
   const navigate = useNavigate();
@@ -84,7 +84,7 @@ export default function AddConcern() {
       }
 
       setSuccess(true);
-      setTimeout(() => navigate('/routine'), 1500);
+      setTimeout(() => navigate('/cart'), 1500);
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -94,14 +94,14 @@ export default function AddConcern() {
 
   if (!existingProfile) {
     return (
-      <div className="min-h-screen flex flex-col">
-        <Tabs />
-        <div className="flex-1 flex items-center justify-center p-6">
+      <div className="min-h-screen bg-cream flex flex-col">
+        <TopNav />
+        <div className="flex-1 flex items-center justify-center p-8">
           <div className="text-center">
-            <p className="text-gray-600 mb-4">Complete an intake first to add concerns.</p>
+            <p className="text-lg text-muted mb-6">Complete an intake first to add concerns.</p>
             <button
               onClick={() => navigate('/')}
-              className="px-6 py-3 bg-brand-600 text-white rounded-xl font-medium"
+              className="px-8 py-4 bg-brand-500 text-white rounded-full text-lg font-semibold hover:bg-brand-600 active:press transition-all duration-200"
             >
               Start Intake
             </button>
@@ -112,27 +112,24 @@ export default function AddConcern() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      <header className="bg-white border-b px-4 py-3">
-        <h1 className="text-lg font-bold text-brand-700">SkinSync Advisor</h1>
-      </header>
-      <Tabs />
+    <div className="min-h-screen bg-cream flex flex-col animate-fade-in">
+      <TopNav />
 
-      <div className="flex-1 max-w-lg mx-auto w-full p-4 space-y-4">
-        <h2 className="text-xl font-bold">Add New Concern</h2>
-        <p className="text-sm text-gray-500">
+      <div className="flex-1 max-w-lg mx-auto w-full p-6 space-y-6">
+        <h2 className="text-3xl font-bold text-ink">Add New Concern</h2>
+        <p className="text-lg text-muted">
           Describe a new concern. Your existing profile will be updated — not replaced.
         </p>
 
         {success ? (
-          <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-            <p className="text-green-800 font-medium text-lg mb-2">Profile updated!</p>
-            <p className="text-sm text-green-600">Redirecting to your routine...</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-3xl p-8 text-center">
+            <p className="text-emerald-800 font-medium text-2xl mb-3">Profile updated!</p>
+            <p className="text-base text-emerald-600">Redirecting to your routine...</p>
           </div>
         ) : (
-          <div className="space-y-4">
+          <div className="space-y-5">
             <div>
-              <label htmlFor="concern-text" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="concern-text" className="block text-lg font-medium text-ink mb-3">
                 Describe your new concern *
               </label>
               <textarea
@@ -141,19 +138,23 @@ export default function AddConcern() {
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 placeholder="e.g., I'm noticing some new dark spots on my cheeks..."
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-brand-500 focus:outline-none resize-none"
+                className="w-full px-5 py-4 bg-beige border border-sand rounded-2xl focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500/30 resize-none text-lg"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-lg font-medium text-ink mb-3">
                 Optional: New photo
               </label>
               <button
                 onClick={() => fileRef.current?.click()}
-                className="px-4 py-2 border-2 border-dashed border-gray-300 rounded-xl text-sm text-gray-500 hover:border-brand-400"
+                className={`px-5 py-3 border border-dashed rounded-full text-base transition-colors ${
+                  photoDataUrl
+                    ? 'border-brand-400 text-brand-700 bg-brand-50'
+                    : 'border-sand text-muted hover:border-brand-400'
+                }`}
               >
-                {photoDataUrl ? 'Photo selected ✓' : 'Choose photo'}
+                {photoDataUrl ? 'Photo selected' : 'Choose photo'}
               </button>
               <input
                 ref={fileRef}
@@ -165,19 +166,19 @@ export default function AddConcern() {
               />
             </div>
 
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-rose-600 text-base">{error}</p>}
 
             <button
               onClick={handleSubmit}
               disabled={loading || !text.trim()}
-              className="w-full py-3 bg-brand-600 text-white rounded-xl font-medium hover:bg-brand-700 disabled:bg-gray-300 transition-colors"
+              className="w-full py-5 bg-brand-500 text-white rounded-full text-lg font-semibold hover:bg-brand-600 active:press disabled:bg-sand disabled:text-muted disabled:cursor-not-allowed transition-all duration-200"
             >
               {loading ? 'Updating profile...' : 'Add Concern & Update'}
             </button>
           </div>
         )}
 
-        <p className="text-xs text-gray-400 text-center">
+        <p className="text-sm text-muted text-center">
           Educational shopping support — not medical diagnosis.
         </p>
       </div>
