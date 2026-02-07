@@ -1,0 +1,134 @@
+{
+  "concerns_to_actives": {
+    "inflammatory_acne": [
+      "salicylic_acid",
+      "benzoyl_peroxide",
+      "niacinamide",
+      "tea_tree",
+      "azelaic_acid"
+    ],
+    "redness": [
+      "niacinamide",
+      "centella_asiatica",
+      "azelaic_acid",
+      "panthenol",
+      "ceramides"
+    ],
+    "dryness": [
+      "hyaluronic_acid",
+      "ceramides",
+      "glycerin",
+      "squalane",
+      "panthenol"
+    ],
+    "hyperpigmentation": [
+      "vitamin_c",
+      "alpha_arbutin",
+      "niacinamide",
+      "azelaic_acid",
+      "retinol"
+    ],
+    "barrier_damage": [
+      "ceramides",
+      "panthenol",
+      "glycerin",
+      "squalane",
+      "centella_asiatica"
+    ],
+    "oiliness": [
+      "salicylic_acid",
+      "niacinamide",
+      "tea_tree",
+      "glycolic_acid"
+    ],
+    "texture": [
+      "glycolic_acid",
+      "retinol",
+      "lactic_acid",
+      "salicylic_acid",
+      "azelaic_acid"
+    ],
+    "sensitivity": [
+      "centella_asiatica",
+      "panthenol",
+      "ceramides",
+      "hyaluronic_acid",
+      "squalane"
+    ],
+    "aging": [
+      "retinol",
+      "vitamin_c",
+      "glycolic_acid",
+      "hyaluronic_acid",
+      "niacinamide"
+    ],
+    "dark_spots": [
+      "vitamin_c",
+      "alpha_arbutin",
+      "niacinamide",
+      "azelaic_acid",
+      "lactic_acid"
+    ]
+  },
+  "strategy_to_actives": {
+    "salicylic_acid": [
+      "salicylic_acid",
+      "niacinamide",
+      "tea_tree"
+    ],
+    "niacinamide_centella": [
+      "niacinamide",
+      "centella_asiatica",
+      "panthenol",
+      "hyaluronic_acid"
+    ],
+    "benzoyl_peroxide": [
+      "benzoyl_peroxide",
+      "niacinamide",
+      "ceramides"
+    ],
+    "retinoid": [
+      "retinol",
+      "hyaluronic_acid",
+      "ceramides",
+      "niacinamide"
+    ],
+    "barrier_repair": [
+      "ceramides",
+      "panthenol",
+      "glycerin",
+      "squalane",
+      "centella_asiatica",
+      "hyaluronic_acid"
+    ],
+    "brightening_vitamin_c": [
+      "vitamin_c",
+      "alpha_arbutin",
+      "niacinamide",
+      "hyaluronic_acid"
+    ],
+    "hydration_focus": [
+      "hyaluronic_acid",
+      "glycerin",
+      "ceramides",
+      "squalane",
+      "panthenol"
+    ]
+  },
+  "harsh_actives": [
+    "retinol",
+    "glycolic_acid",
+    "salicylic_acid",
+    "benzoyl_peroxide",
+    "lactic_acid",
+    "azelaic_acid"
+  ],
+  "barrier_helpers": [
+    "ceramides",
+    "hyaluronic_acid",
+    "glycerin",
+    "panthenol",
+    "squalane",
+    "centella_asiatica"
+  ]
+}

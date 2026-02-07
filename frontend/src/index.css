@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.high-contrast {
+  --tw-bg-opacity: 1;
+  filter: contrast(1.25);
+}
+
+.high-contrast .bg-white {
+  background-color: #fff;
+  border-color: #000;
+}
+
+.high-contrast .text-gray-500 {
+  color: #333;
+}
+
+.high-contrast .text-gray-400 {
+  color: #444;
+}

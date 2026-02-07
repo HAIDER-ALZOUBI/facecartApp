@@ -1,0 +1,86 @@
+[
+  {
+    "a": "retinol",
+    "b": "glycolic_acid",
+    "risk": "high",
+    "alert": "Retinol and glycolic acid (AHA) together can cause severe irritation, peeling, and compromise your skin barrier.",
+    "fix": "Alternate nights — use glycolic acid one evening and retinol the next."
+  },
+  {
+    "a": "retinol",
+    "b": "salicylic_acid",
+    "risk": "high",
+    "alert": "Layering retinol with salicylic acid (BHA) increases the risk of dryness, irritation, and over-exfoliation.",
+    "fix": "Don't layer; alternate nights instead."
+  },
+  {
+    "a": "retinol",
+    "b": "benzoyl_peroxide",
+    "risk": "high",
+    "alert": "Benzoyl peroxide can oxidize and deactivate retinol, making both ingredients less effective while increasing irritation.",
+    "fix": "Never combine; use benzoyl peroxide in the morning and retinol in the evening."
+  },
+  {
+    "a": "retinol",
+    "b": "vitamin_c",
+    "risk": "moderate",
+    "alert": "Using retinol and vitamin C together can cause irritation for sensitive skin, and they work best at different pH levels.",
+    "fix": "Use vitamin C in the morning and retinol in the evening for best results."
+  },
+  {
+    "a": "glycolic_acid",
+    "b": "salicylic_acid",
+    "risk": "moderate",
+    "alert": "Combining AHA (glycolic acid) and BHA (salicylic acid) increases the chance of over-exfoliation and irritation.",
+    "fix": "Use one at a time; don't layer. Try AHA one night and BHA the next, or use them on different areas."
+  },
+  {
+    "a": "niacinamide",
+    "b": "vitamin_c",
+    "risk": "low",
+    "alert": "Niacinamide and vitamin C were once thought to cancel each other out, but this is largely a myth. Some people may experience mild flushing.",
+    "fix": "Wait 15 minutes between application or use at different times of day if you notice any flushing."
+  },
+  {
+    "a": "benzoyl_peroxide",
+    "b": "vitamin_c",
+    "risk": "high",
+    "alert": "Benzoyl peroxide oxidizes vitamin C, rendering it completely ineffective. Both ingredients are wasted when combined.",
+    "fix": "Never combine; they cancel each other out. Use vitamin C in the morning and benzoyl peroxide in the evening."
+  },
+  {
+    "a": "glycolic_acid",
+    "b": "vitamin_c",
+    "risk": "moderate",
+    "alert": "Both are acidic actives. Layering them can lower your skin's pH too much, causing stinging, redness, and irritation.",
+    "fix": "Don't layer; use vitamin C in the morning and glycolic acid in the evening."
+  },
+  {
+    "a": "salicylic_acid",
+    "b": "vitamin_c",
+    "risk": "moderate",
+    "alert": "Both are acidic and layering them can cause excessive irritation and reduce the effectiveness of vitamin C.",
+    "fix": "Don't layer; use vitamin C in the morning and salicylic acid in the evening."
+  },
+  {
+    "a": "retinol",
+    "b": "lactic_acid",
+    "risk": "high",
+    "alert": "Retinol and lactic acid (AHA) together can cause significant irritation, redness, and damage to the skin barrier.",
+    "fix": "Alternate nights; never layer these two ingredients in the same routine."
+  },
+  {
+    "a": "benzoyl_peroxide",
+    "b": "glycolic_acid",
+    "risk": "moderate",
+    "alert": "Combining benzoyl peroxide with glycolic acid can lead to excessive dryness, peeling, and irritation.",
+    "fix": "Don't use at the same time; apply them during different parts of your routine (morning vs. evening)."
+  },
+  {
+    "a": "azelaic_acid",
+    "b": "glycolic_acid",
+    "risk": "moderate",
+    "alert": "Both are exfoliating acids. Using them together may over-exfoliate and irritate the skin.",
+    "fix": "Alternate days or use at different times of day to reduce the risk of irritation."
+  }
+]

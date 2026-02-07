@@ -1,0 +1,1063 @@
+[
+  {
+    "id": "cleanser_001",
+    "name": "Gentle Foaming Facial Cleanser",
+    "brand": "CeraVeil",
+    "price": 14.99,
+    "size_ml": 236,
+    "category": "cleanser",
+    "skin_types": ["normal", "dry", "sensitive"],
+    "concerns": ["dryness", "barrier_damage", "sensitivity"],
+    "key_ingredients": ["ceramides", "hyaluronic_acid", "glycerin"],
+    "full_ingredients": "Water, Glycerin, Cocamidopropyl Hydroxysultaine, Ceramide NP, Ceramide AP, Ceramide EOP, Sodium Hyaluronate, Cholesterol, Phytosphingosine, Sodium Lauroyl Lactylate, Carbomer, Xanthan Gum, Sodium Chloride, Disodium EDTA, Citric Acid",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.7,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "barrier_damage": "Ceramide complex restores and reinforces the skin barrier with every wash",
+      "dryness": "Hyaluronic acid and glycerin maintain hydration while cleansing without stripping"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=CeraVeil+Gentle+Foaming+Facial+Cleanser" },
+      { "label": "Derma Store", "url": "https://www.example.com/ceraveil-foaming-cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_002",
+    "name": "Salicylic Acid Purifying Wash",
+    "brand": "Neutro Skin",
+    "price": 9.49,
+    "size_ml": 177,
+    "category": "cleanser",
+    "skin_types": ["oily", "acne-prone", "combination"],
+    "concerns": ["inflammatory_acne", "oiliness", "texture"],
+    "key_ingredients": ["salicylic_acid", "glycerin"],
+    "full_ingredients": "Water, Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Betaine, Salicylic Acid (2%), Glycerin, Acrylates Copolymer, Sodium Chloride, Citric Acid, Cocamide MEA, Sodium Benzoate, Disodium EDTA, Tetrasodium EDTA, Methylisothiazolinone",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.3,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "inflammatory_acne": "2% salicylic acid penetrates pores to dissolve excess sebum and dead skin cells",
+      "oiliness": "Controls excess oil production without over-drying the skin"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Neutro+Skin+Salicylic+Acid+Purifying+Wash" }
+    ]
+  },
+  {
+    "id": "cleanser_003",
+    "name": "Toleriane Hydrating Gentle Cleanser",
+    "brand": "La Roche-Pierre",
+    "price": 15.99,
+    "size_ml": 200,
+    "category": "cleanser",
+    "skin_types": ["dry", "sensitive", "normal"],
+    "concerns": ["sensitivity", "dryness", "redness"],
+    "key_ingredients": ["ceramides", "niacinamide", "glycerin"],
+    "full_ingredients": "Water, Glycerin, Pentaerythrityl Tetraethylhexanoate, Niacinamide, Propylene Glycol, Ceramide NP, Ammonium Polyacryloyldimethyl Taurate, Polysorbate 60, Sodium Chloride, Coco-Betaine, Disodium EDTA, Capryloyl Glycine",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.6,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "Minimalist formula with prebiotic thermal water soothes reactive skin",
+      "redness": "Niacinamide helps calm visible redness and irritation during cleansing"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=La+Roche-Pierre+Toleriane+Hydrating+Gentle+Cleanser" },
+      { "label": "Ulta Beauty", "url": "https://www.example.com/lrp-toleriane-cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_004",
+    "name": "Green Tea Balancing Gel Cleanser",
+    "brand": "InnisFresh",
+    "price": 12.00,
+    "size_ml": 150,
+    "category": "cleanser",
+    "skin_types": ["combination", "oily", "normal"],
+    "concerns": ["oiliness", "texture"],
+    "key_ingredients": ["tea_tree", "glycerin"],
+    "full_ingredients": "Water, Glycerin, Cocamidopropyl Betaine, Camellia Sinensis Leaf Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Sodium Cocoyl Isethionate, Panthenol, Allantoin, Sodium Chloride, Citric Acid, Butylene Glycol, Ethylhexylglycerin, Disodium EDTA",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": false,
+    "rating": 4.2,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "oiliness": "Tea tree and green tea extracts help regulate sebum without harsh surfactants",
+      "texture": "Gentle exfoliating action smooths rough patches and uneven skin texture"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=InnisFresh+Green+Tea+Balancing+Gel+Cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_005",
+    "name": "Soy Fresh Facial Cleanser",
+    "brand": "Fresh Elements",
+    "price": 38.00,
+    "size_ml": 150,
+    "category": "cleanser",
+    "skin_types": ["normal", "dry", "combination"],
+    "concerns": ["dryness", "aging", "dark_spots"],
+    "key_ingredients": ["glycerin", "hyaluronic_acid"],
+    "full_ingredients": "Water, Glycerin, Soy Amino Acids, Cucumis Sativus (Cucumber) Fruit Extract, Sodium Hyaluronate, Rosa Damascena Flower Water, Aloe Barbadensis Leaf Juice, Sodium Cocoyl Glutamate, PEG-7 Glyceryl Cocoate, Tocopherol, Sodium Chloride, Phenoxyethanol",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": false,
+    "rating": 4.4,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "aging": "Soy amino acids and rose water tone and brighten mature skin during cleansing",
+      "dryness": "Gel-to-foam formula preserves natural moisture while removing impurities"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Fresh+Elements+Soy+Fresh+Facial+Cleanser" },
+      { "label": "Sephora", "url": "https://www.example.com/fresh-elements-soy-cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_006",
+    "name": "BHA Blackhead Power Liquid Wash",
+    "brand": "COSRX Lab",
+    "price": 11.99,
+    "size_ml": 150,
+    "category": "cleanser",
+    "skin_types": ["oily", "acne-prone", "combination"],
+    "concerns": ["inflammatory_acne", "texture", "oiliness"],
+    "key_ingredients": ["salicylic_acid", "tea_tree"],
+    "full_ingredients": "Water, Salix Alba (Willow) Bark Extract, Butylene Glycol, Betaine Salicylate, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Niacinamide, Sodium Hyaluronate, Cocamidopropyl Betaine, Sodium Cocoyl Isethionate, Caprylyl Glycol, Ethylhexylglycerin, 1,2-Hexanediol",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "inflammatory_acne": "Betaine salicylate gently unclogs pores without triggering inflammation",
+      "texture": "Tea tree extract provides antibacterial action to refine skin texture"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=COSRX+Lab+BHA+Blackhead+Power+Liquid+Wash" }
+    ]
+  },
+  {
+    "id": "cleanser_007",
+    "name": "Low pH Good Morning Gel Cleanser",
+    "brand": "COSRX Lab",
+    "price": 10.49,
+    "size_ml": 150,
+    "category": "cleanser",
+    "skin_types": ["sensitive", "combination", "normal", "acne-prone"],
+    "concerns": ["sensitivity", "inflammatory_acne", "redness"],
+    "key_ingredients": ["tea_tree", "glycerin"],
+    "full_ingredients": "Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.4,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "Low pH formula (around 5.0) respects the skin's natural acid mantle",
+      "inflammatory_acne": "Tea tree oil provides mild antibacterial cleansing for breakout-prone skin"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=COSRX+Lab+Low+pH+Good+Morning+Gel+Cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_008",
+    "name": "Micro Micellar Skin Renewing Cleanser",
+    "brand": "Garnier Pure",
+    "price": 8.99,
+    "size_ml": 200,
+    "category": "cleanser",
+    "skin_types": ["normal", "combination", "dry"],
+    "concerns": ["dryness", "sensitivity"],
+    "key_ingredients": ["hyaluronic_acid", "glycerin"],
+    "full_ingredients": "Water, Hexylene Glycol, Glycerin, Sodium Hyaluronate, Poloxamer 184, Disodium Cocoamphodiacetate, Disodium EDTA, Polyaminopropyl Biguanide, BHT, Citric Acid",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": false,
+    "rating": 4.0,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "dryness": "Micellar technology lifts dirt without disrupting the moisture barrier",
+      "sensitivity": "No-rinse formula minimizes friction and irritation on delicate skin"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Garnier+Pure+Micro+Micellar+Skin+Renewing+Cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_009",
+    "name": "Glycolic Renewal Cleanser",
+    "brand": "Paula's Select",
+    "price": 18.00,
+    "size_ml": 190,
+    "category": "cleanser",
+    "skin_types": ["normal", "oily", "combination"],
+    "concerns": ["texture", "hyperpigmentation", "dark_spots"],
+    "key_ingredients": ["glycolic_acid", "glycerin"],
+    "full_ingredients": "Water, Sodium Laureth Sulfate, Acrylates Copolymer, Glycolic Acid, Glycerin, Cocamidopropyl Betaine, Sodium Hydroxide, Panthenol, Chamomilla Recutita (Matricaria) Flower Extract, Aloe Barbadensis Leaf Juice, Phenoxyethanol, Ethylhexylglycerin, Sodium Chloride",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.3,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "texture": "Glycolic acid promotes cellular turnover for smoother, more refined skin",
+      "hyperpigmentation": "AHA action helps fade post-inflammatory marks over consistent use"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Paula%27s+Select+Glycolic+Renewal+Cleanser" },
+      { "label": "Paula's Select", "url": "https://www.example.com/paulas-select-glycolic-cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_010",
+    "name": "Ultra Gentle Daily Cleanser",
+    "brand": "Neutro Skin",
+    "price": 10.99,
+    "size_ml": 177,
+    "category": "cleanser",
+    "skin_types": ["sensitive", "dry", "normal"],
+    "concerns": ["sensitivity", "dryness", "redness"],
+    "key_ingredients": ["glycerin", "panthenol"],
+    "full_ingredients": "Water, Glycerin, Sodium Cocoyl Glycinate, Panthenol, Allantoin, Bisabolol, Citric Acid, Sodium Chloride, Sodium Benzoate, Ethylhexylglycerin",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.1,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "Dermatologist-tested formula with no common irritants for reactive skin",
+      "redness": "Bisabolol and panthenol calm visible redness during the cleansing step"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Neutro+Skin+Ultra+Gentle+Daily+Cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_011",
+    "name": "Centella Calming Foam Cleanser",
+    "brand": "SkinLab 1025",
+    "price": 13.50,
+    "size_ml": 150,
+    "category": "cleanser",
+    "skin_types": ["sensitive", "acne-prone", "combination"],
+    "concerns": ["redness", "inflammatory_acne", "sensitivity"],
+    "key_ingredients": ["centella_asiatica", "panthenol", "glycerin"],
+    "full_ingredients": "Water, Glycerin, Myristic Acid, Potassium Hydroxide, Stearic Acid, Lauric Acid, Centella Asiatica Extract, Madecassoside, Asiaticoside, Panthenol, Butylene Glycol, Cocamidopropyl Betaine, Sodium Methyl Cocoyl Taurate, Sodium Chloride, Ethylhexylglycerin",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "redness": "Centella asiatica extract and madecassoside visibly soothe inflamed, red skin",
+      "sensitivity": "Gentle amino acid surfactants cleanse without compromising the moisture barrier"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=SkinLab+1025+Centella+Calming+Foam+Cleanser" }
+    ]
+  },
+  {
+    "id": "cleanser_012",
+    "name": "Benzoyl Peroxide Acne Wash 4%",
+    "brand": "PanOxy",
+    "price": 9.99,
+    "size_ml": 170,
+    "category": "cleanser",
+    "skin_types": ["oily", "acne-prone"],
+    "concerns": ["inflammatory_acne", "oiliness"],
+    "key_ingredients": ["benzoyl_peroxide", "glycerin"],
+    "full_ingredients": "Water, Benzoyl Peroxide (4%), Glycerin, Carbomer, Potassium Hydroxide, Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Betaine, Acrylates Copolymer, Disodium EDTA, Sodium Chloride",
+    "avg_daily_usage_ml": 3,
+    "fragrance_free": true,
+    "rating": 4.2,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "inflammatory_acne": "4% benzoyl peroxide kills acne-causing bacteria on contact while minimizing irritation",
+      "oiliness": "Deep-cleansing formula removes excess sebum from congested pores"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=PanOxy+Benzoyl+Peroxide+Acne+Wash+4%25" },
+      { "label": "Walgreens", "url": "https://www.example.com/panoxy-bp-wash" }
+    ]
+  },
+  {
+    "id": "treatment_001",
+    "name": "Niacinamide 10% + Zinc 1% Serum",
+    "brand": "The Commonfolk",
+    "price": 8.90,
+    "size_ml": 30,
+    "category": "treatment",
+    "skin_types": ["oily", "combination", "acne-prone", "normal"],
+    "concerns": ["oiliness", "texture", "hyperpigmentation", "inflammatory_acne"],
+    "key_ingredients": ["niacinamide", "glycerin"],
+    "full_ingredients": "Water, Niacinamide (10%), Zinc PCA (1%), Pentylene Glycol, Glycerin, Dimethyl Isosorbide, Tamarindus Indica Seed Gum, Xanthan Gum, Isoceteth-20, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "oiliness": "High-concentration niacinamide regulates sebum output and visibly minimizes pores",
+      "hyperpigmentation": "Niacinamide inhibits melanin transfer to reduce dark spots and uneven tone"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=The+Commonfolk+Niacinamide+10+Zinc+1+Serum" },
+      { "label": "The Commonfolk", "url": "https://www.example.com/commonfolk-niacinamide" }
+    ]
+  },
+  {
+    "id": "treatment_002",
+    "name": "Retinol 0.5% in Squalane",
+    "brand": "The Commonfolk",
+    "price": 9.80,
+    "size_ml": 30,
+    "category": "treatment",
+    "skin_types": ["normal", "combination", "oily"],
+    "concerns": ["aging", "texture", "hyperpigmentation", "dark_spots"],
+    "key_ingredients": ["retinol", "squalane"],
+    "full_ingredients": "Squalane, Retinol (0.5%), Caprylic/Capric Triglyceride, Solanum Lycopersicum (Tomato) Fruit Extract, Rosmarinus Officinalis (Rosemary) Leaf Extract, Jojoba Esters, Tocopherol, BHT",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.4,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "aging": "Retinol accelerates cell turnover, boosting collagen and reducing fine lines",
+      "dark_spots": "Promotes faster shedding of hyperpigmented cells for a more even complexion"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=The+Commonfolk+Retinol+0.5+in+Squalane" },
+      { "label": "The Commonfolk", "url": "https://www.example.com/commonfolk-retinol" }
+    ]
+  },
+  {
+    "id": "treatment_003",
+    "name": "Vitamin C 15% Brightening Serum",
+    "brand": "SkinCeutica",
+    "price": 48.00,
+    "size_ml": 30,
+    "category": "treatment",
+    "skin_types": ["normal", "dry", "combination"],
+    "concerns": ["hyperpigmentation", "aging", "dark_spots"],
+    "key_ingredients": ["vitamin_c", "hyaluronic_acid"],
+    "full_ingredients": "Water, Ascorbic Acid (15%), Ethoxydiglycol, Propylene Glycol, Sodium Hyaluronate, Glycerin, Laureth-23, Phenoxyethanol, Tocopherol, Triethanolamine, Ferulic Acid, Panthenol",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.7,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "hyperpigmentation": "L-ascorbic acid inhibits tyrosinase to visibly brighten and even out skin tone",
+      "aging": "Potent antioxidant neutralizes free radicals and stimulates collagen synthesis"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=SkinCeutica+Vitamin+C+15+Brightening+Serum" },
+      { "label": "Sephora", "url": "https://www.example.com/skinceutica-vitc-serum" }
+    ]
+  },
+  {
+    "id": "treatment_004",
+    "name": "Azelaic Acid Suspension 10%",
+    "brand": "The Commonfolk",
+    "price": 9.90,
+    "size_ml": 30,
+    "category": "treatment",
+    "skin_types": ["sensitive", "acne-prone", "combination", "oily"],
+    "concerns": ["inflammatory_acne", "redness", "hyperpigmentation", "texture"],
+    "key_ingredients": ["azelaic_acid", "glycerin"],
+    "full_ingredients": "Water, Isodecyl Neopentanoate, Dimethicone, Azelaic Acid (10%), Dimethicone/Bis-Isobutyl PPG-20 Crosspolymer, Dimethyl Isosorbide, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glycerin, Polysilicone-11, Isohexadecane, Tocopherol, Phenoxyethanol, Chlorphenesin",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.3,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "inflammatory_acne": "Azelaic acid has antibacterial and anti-inflammatory properties that calm active breakouts",
+      "redness": "Reduces redness and visible inflammation associated with rosacea-type conditions"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=The+Commonfolk+Azelaic+Acid+Suspension+10" }
+    ]
+  },
+  {
+    "id": "treatment_005",
+    "name": "Alpha Arbutin 2% + HA Serum",
+    "brand": "The Commonfolk",
+    "price": 10.50,
+    "size_ml": 30,
+    "category": "treatment",
+    "skin_types": ["normal", "dry", "combination", "sensitive"],
+    "concerns": ["hyperpigmentation", "dark_spots"],
+    "key_ingredients": ["alpha_arbutin", "hyaluronic_acid"],
+    "full_ingredients": "Water, Alpha-Arbutin (2%), Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Glycerin, Pentylene Glycol, Propanediol, PPG-26-Buteth-26, PEG-40 Hydrogenated Castor Oil, Trisodium Ethylenediamine Disuccinate, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.4,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "hyperpigmentation": "Alpha arbutin is a gentle tyrosinase inhibitor that gradually fades dark patches",
+      "dark_spots": "Concentrated formula targets stubborn post-acne marks and sun spots"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=The+Commonfolk+Alpha+Arbutin+2+HA+Serum" }
+    ]
+  },
+  {
+    "id": "treatment_006",
+    "name": "BHA 2% Liquid Exfoliant",
+    "brand": "Paula's Select",
+    "price": 32.00,
+    "size_ml": 118,
+    "category": "treatment",
+    "skin_types": ["oily", "combination", "acne-prone", "normal"],
+    "concerns": ["texture", "inflammatory_acne", "oiliness"],
+    "key_ingredients": ["salicylic_acid", "glycerin"],
+    "full_ingredients": "Water, Methylpropanediol, Butylene Glycol, Salicylic Acid (2%), Polysorbate 20, Green Tea Extract, Glycerin, Sodium Hydroxide, Tetrasodium EDTA, Methylisothiazolinone",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.8,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "texture": "2% BHA exfoliates inside pores for dramatically smoother, clearer skin",
+      "inflammatory_acne": "Salicylic acid dissolves pore-clogging debris and reduces breakout frequency"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Paula%27s+Select+BHA+2+Liquid+Exfoliant" },
+      { "label": "Paula's Select", "url": "https://www.example.com/paulas-bha-exfoliant" }
+    ]
+  },
+  {
+    "id": "treatment_007",
+    "name": "Glycolic Acid 7% Toning Solution",
+    "brand": "The Commonfolk",
+    "price": 11.50,
+    "size_ml": 240,
+    "category": "treatment",
+    "skin_types": ["normal", "oily", "combination"],
+    "concerns": ["texture", "hyperpigmentation", "dark_spots", "aging"],
+    "key_ingredients": ["glycolic_acid", "niacinamide"],
+    "full_ingredients": "Water, Glycolic Acid (7%), Rosa Damascena Flower Water, Centaurea Cyanus Flower Water, Aloe Barbadensis Leaf Water, Niacinamide, Propanediol, Glycerin, Triethanolamine, Pentylene Glycol, Sodium Hyaluronate Crosspolymer, Tasmannia Lanceolata Fruit/Leaf Extract, Phenoxyethanol, Chlorphenesin",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": false,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "texture": "7% glycolic acid dissolves dead cell buildup for visibly radiant, refined skin",
+      "dark_spots": "AHA exfoliation accelerates fading of post-inflammatory pigmentation"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=The+Commonfolk+Glycolic+Acid+7+Toning+Solution" }
+    ]
+  },
+  {
+    "id": "treatment_008",
+    "name": "Centella Unscented Recovery Serum",
+    "brand": "PuritoGreen",
+    "price": 17.00,
+    "size_ml": 60,
+    "category": "treatment",
+    "skin_types": ["sensitive", "acne-prone", "dry", "combination"],
+    "concerns": ["redness", "barrier_damage", "sensitivity", "inflammatory_acne"],
+    "key_ingredients": ["centella_asiatica", "panthenol", "niacinamide"],
+    "full_ingredients": "Centella Asiatica Extract (49%), Water, Glycerin, Dipropylene Glycol, Niacinamide, Butylene Glycol, 1,2-Hexanediol, Cetearyl Olivate, Sorbitan Olivate, Asiaticoside, Asiatic Acid, Madecassic Acid, Madecassoside, Panthenol, Sodium Hyaluronate, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Carbomer, Arginine",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.6,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "redness": "49% centella extract with four key centella compounds intensely calms redness",
+      "barrier_damage": "Madecassoside and panthenol synergistically repair compromised skin barriers"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=PuritoGreen+Centella+Unscented+Recovery+Serum" },
+      { "label": "YesStyle", "url": "https://www.example.com/puritogreen-centella-serum" }
+    ]
+  },
+  {
+    "id": "treatment_009",
+    "name": "Lactic Acid 10% + HA Serum",
+    "brand": "The Commonfolk",
+    "price": 9.60,
+    "size_ml": 30,
+    "category": "treatment",
+    "skin_types": ["dry", "normal", "sensitive"],
+    "concerns": ["texture", "dryness", "hyperpigmentation"],
+    "key_ingredients": ["lactic_acid", "hyaluronic_acid"],
+    "full_ingredients": "Water, Lactic Acid (10%), Glycerin, Sodium Hyaluronate Crosspolymer, Pentylene Glycol, Propanediol, PPG-26-Buteth-26, PEG-40 Hydrogenated Castor Oil, Trisodium Ethylenediamine Disuccinate, Acacia Senegal Gum, Xanthan Gum, Phenoxyethanol, Chlorphenesin, Tasmannia Lanceolata Fruit/Leaf Extract",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.3,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "texture": "Lactic acid is a gentler AHA that smooths and refines without excessive irritation",
+      "dryness": "Lactic acid is a humectant AHA, meaning it exfoliates while drawing in moisture"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=The+Commonfolk+Lactic+Acid+10+HA+Serum" }
+    ]
+  },
+  {
+    "id": "treatment_010",
+    "name": "Adapalene Gel 0.1% Acne Treatment",
+    "brand": "DifferinCare",
+    "price": 14.49,
+    "size_ml": 45,
+    "category": "treatment",
+    "skin_types": ["oily", "acne-prone", "combination"],
+    "concerns": ["inflammatory_acne", "texture", "dark_spots"],
+    "key_ingredients": ["retinol", "glycerin"],
+    "full_ingredients": "Water, Carbomer 940, Adapalene (0.1%), Propylene Glycol, Poloxamer 182, Purified Water, Edetate Disodium, Methylparaben, Phenoxyethanol, Sodium Hydroxide, Squalane",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.6,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "inflammatory_acne": "Retinoid normalizes skin cell turnover to prevent clogged pores and new breakouts",
+      "dark_spots": "Accelerated cell renewal helps fade post-acne hyperpigmentation marks"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=DifferinCare+Adapalene+Gel+0.1+Acne+Treatment" },
+      { "label": "CVS", "url": "https://www.example.com/differincare-adapalene" }
+    ]
+  },
+  {
+    "id": "treatment_011",
+    "name": "Hyaluronic Acid 2% + B5 Serum",
+    "brand": "The Commonfolk",
+    "price": 8.90,
+    "size_ml": 30,
+    "category": "treatment",
+    "skin_types": ["dry", "normal", "sensitive", "combination"],
+    "concerns": ["dryness", "barrier_damage"],
+    "key_ingredients": ["hyaluronic_acid", "panthenol"],
+    "full_ingredients": "Water, Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Panthenol, Pentylene Glycol, Propanediol, Ahnfeltia Concinna Extract, Glycerin, Trisodium Ethylenediamine Disuccinate, Citric Acid, Ethoxydiglycol, Caprylyl Glycol, Hexylene Glycol, Phenoxyethanol, Chlorphenesin",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "dryness": "Multi-weight hyaluronic acid draws and locks moisture into every layer of skin",
+      "barrier_damage": "Panthenol (vitamin B5) accelerates skin repair and strengthens the barrier"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=The+Commonfolk+Hyaluronic+Acid+2+B5+Serum" }
+    ]
+  },
+  {
+    "id": "treatment_012",
+    "name": "Advanced Snail 96 Mucin Essence",
+    "brand": "COSRX Lab",
+    "price": 16.99,
+    "size_ml": 100,
+    "category": "treatment",
+    "skin_types": ["dry", "normal", "combination", "sensitive"],
+    "concerns": ["dryness", "barrier_damage", "aging", "redness"],
+    "key_ingredients": ["hyaluronic_acid", "glycerin"],
+    "full_ingredients": "Snail Secretion Filtrate (96%), Betaine, Butylene Glycol, 1,2-Hexanediol, Sodium Hyaluronate, Panthenol, Arginine, Allantoin, Ethyl Hexanediol, Sodium Polyacrylate, Carbomer, Phenoxyethanol",
+    "avg_daily_usage_ml": 1,
+    "fragrance_free": true,
+    "rating": 4.6,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "barrier_damage": "96% snail mucin provides a protective film that aids skin recovery and repair",
+      "dryness": "Rich glycoprotein content delivers deep hydration and plumps dehydrated skin"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=COSRX+Lab+Advanced+Snail+96+Mucin+Essence" },
+      { "label": "Amazon", "url": "https://www.example.com/cosrxlab-snail-essence" }
+    ]
+  },
+  {
+    "id": "moisturizer_001",
+    "name": "Moisturizing Cream",
+    "brand": "CeraVeil",
+    "price": 16.99,
+    "size_ml": 340,
+    "category": "moisturizer",
+    "skin_types": ["dry", "normal", "sensitive"],
+    "concerns": ["dryness", "barrier_damage", "sensitivity"],
+    "key_ingredients": ["ceramides", "hyaluronic_acid", "glycerin"],
+    "full_ingredients": "Water, Glycerin, Cetearyl Alcohol, Ceramide NP, Ceramide AP, Ceramide EOP, Carbomer, Cetyl Alcohol, Ceteareth-20, Cholesterol, Dimethicone, Sodium Hyaluronate, Sodium Lauroyl Lactylate, Petrolatum, Phytosphingosine, Polysorbate 20, Sodium Hydroxide, Xanthan Gum, Disodium EDTA, Phenoxyethanol, Ethylhexylglycerin",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.7,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "barrier_damage": "Three essential ceramides restore the natural lipid barrier over time",
+      "dryness": "Rich cream texture with hyaluronic acid provides 24-hour hydration"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=CeraVeil+Moisturizing+Cream" },
+      { "label": "Target", "url": "https://www.example.com/ceraveil-moisturizing-cream" }
+    ]
+  },
+  {
+    "id": "moisturizer_002",
+    "name": "Oil-Free Moisture with SPF 15",
+    "brand": "Neutro Skin",
+    "price": 12.49,
+    "size_ml": 118,
+    "category": "moisturizer",
+    "skin_types": ["oily", "combination", "acne-prone"],
+    "concerns": ["oiliness", "inflammatory_acne"],
+    "key_ingredients": ["glycerin", "hyaluronic_acid"],
+    "full_ingredients": "Water, Glycerin, Ethylhexyl Salicylate, Dimethicone, Diethylhexyl Syringylidenemalonate, Cetyl Alcohol, Sodium Hyaluronate, Diazolidinyl Urea, Methylparaben, Cetearyl Alcohol, Ceteareth-20, Benzyl Alcohol, Propylparaben, Stearyl Alcohol, Carbomer, Sodium Hydroxide",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.1,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "oiliness": "Oil-free, lightweight formula hydrates without adding shine or greasiness",
+      "inflammatory_acne": "Non-comedogenic formula won't clog pores or exacerbate breakouts"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Neutro+Skin+Oil-Free+Moisture" }
+    ]
+  },
+  {
+    "id": "moisturizer_003",
+    "name": "Cicaplast Barrier Recovering Balm B5",
+    "brand": "La Roche-Pierre",
+    "price": 17.49,
+    "size_ml": 40,
+    "category": "moisturizer",
+    "skin_types": ["sensitive", "dry", "normal"],
+    "concerns": ["barrier_damage", "redness", "sensitivity", "dryness"],
+    "key_ingredients": ["panthenol", "glycerin", "centella_asiatica"],
+    "full_ingredients": "Water, Hydrogenated Polyisobutene, Dimethicone, Glycerin, Butyrospermum Parkii (Shea) Butter, Panthenol (5%), Butylene Glycol, Aluminum Starch Octenylsuccinate, Propanediol, Cetyl PEG/PPG-10/1 Dimethicone, Madecassoside, Manganese Gluconate, Magnesium Sulfate, Copper Gluconate, Zinc Gluconate, Acetylated Glycol Stearate, Polyglyceryl-4 Isostearate, Sodium Chloride, Citric Acid, Phenoxyethanol",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.8,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "barrier_damage": "5% panthenol combined with madecassoside provides intensive barrier recovery",
+      "redness": "Mineral-rich formula with zinc and copper calms irritated, angry skin"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=La+Roche-Pierre+Cicaplast+Barrier+Recovering+Balm+B5" },
+      { "label": "Ulta Beauty", "url": "https://www.example.com/lrp-cicaplast-balm" }
+    ]
+  },
+  {
+    "id": "moisturizer_004",
+    "name": "Dramatically Different Moisturizing Gel",
+    "brand": "Cliniqua",
+    "price": 29.50,
+    "size_ml": 125,
+    "category": "moisturizer",
+    "skin_types": ["oily", "combination", "normal"],
+    "concerns": ["oiliness", "texture"],
+    "key_ingredients": ["glycerin", "hyaluronic_acid"],
+    "full_ingredients": "Water, Glycerin, Dimethicone, Sodium Hyaluronate, Cucumis Sativus (Cucumber) Fruit Extract, Hordeum Vulgare (Barley) Extract, Helianthus Annuus (Sunflower) Seedcake, Caprylyl Glycol, Carbomer, Cetyl Alcohol, Petrolatum, Phenoxyethanol, Sodium Hydroxide, Tocopheryl Acetate",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.3,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "oiliness": "Oil-free gel formula absorbs instantly and controls excess shine all day",
+      "texture": "Lightweight hydration smooths and softens without heavy residue"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Cliniqua+Dramatically+Different+Moisturizing+Gel" },
+      { "label": "Sephora", "url": "https://www.example.com/cliniqua-ddmg" }
+    ]
+  },
+  {
+    "id": "moisturizer_005",
+    "name": "Squalane + Omega Repair Cream",
+    "brand": "BiossanceGreen",
+    "price": 52.00,
+    "size_ml": 50,
+    "category": "moisturizer",
+    "skin_types": ["dry", "sensitive", "normal"],
+    "concerns": ["dryness", "barrier_damage", "aging"],
+    "key_ingredients": ["squalane", "ceramides", "glycerin"],
+    "full_ingredients": "Water, Squalane, Glycerin, Caprylic/Capric Triglyceride, Cetearyl Alcohol, Ceramide NP, Ceramide AP, Ceramide EOP, Macadamia Integrifolia Seed Oil, Acai Berry Extract, Aloe Barbadensis Leaf Juice, Shea Butter, Tocopherol, Sodium Hyaluronate, Glyceryl Stearate, Carbomer, Sodium Hydroxide, Phenoxyethanol, Ethylhexylglycerin",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "barrier_damage": "Squalane mimics skin's natural lipids and ceramides reinforce the barrier",
+      "aging": "Omega fatty acids nourish and plump skin, softening the appearance of fine lines"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=BiossanceGreen+Squalane+Omega+Repair+Cream" },
+      { "label": "Sephora", "url": "https://www.example.com/biossancegreen-omega-cream" }
+    ]
+  },
+  {
+    "id": "moisturizer_006",
+    "name": "Natural Moisturizing Factors + HA",
+    "brand": "The Commonfolk",
+    "price": 9.80,
+    "size_ml": 100,
+    "category": "moisturizer",
+    "skin_types": ["normal", "dry", "combination"],
+    "concerns": ["dryness", "barrier_damage"],
+    "key_ingredients": ["hyaluronic_acid", "glycerin", "ceramides"],
+    "full_ingredients": "Water, Caprylic/Capric Triglyceride, Cetyl Alcohol, Propanediol, Stearyl Alcohol, Glycerin, Sodium Hyaluronate, Arginine, Aspartic Acid, Glycine, Alanine, Serine, Valine, Isoleucine, Proline, Threonine, Histidine, Phenylalanine, Ceramide NP, Sodium PCA, PCA, Lactate, Urea, Allantoin, Sodium Hydroxide, Phospholipids, Tocopherol, Carbomer, Phenoxyethanol, Chlorphenesin",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.4,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "dryness": "Mimics skin's own natural moisturizing factors for biomimetic hydration",
+      "barrier_damage": "Amino acids, ceramides, and fatty acids work to restore compromised barriers"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=The+Commonfolk+Natural+Moisturizing+Factors+HA" }
+    ]
+  },
+  {
+    "id": "moisturizer_007",
+    "name": "Protini Polypeptide Rich Cream",
+    "brand": "Drunk Pachyderm",
+    "price": 55.00,
+    "size_ml": 50,
+    "category": "moisturizer",
+    "skin_types": ["normal", "combination", "dry"],
+    "concerns": ["aging", "dryness", "texture"],
+    "key_ingredients": ["glycerin", "panthenol"],
+    "full_ingredients": "Water, Dicaprylyl Carbonate, Glycerin, Cetearyl Alcohol, Isopropyl Isostearate, Panthenol, Acetyl Hexapeptide-8, Copper Tripeptide-1, Palmitoyl Tetrapeptide-7, Palmitoyl Tripeptide-1, Palmitoyl Tripeptide-38, Soybean Folic Acid Ferment Extract, Sodium Hyaluronate, Pygmy Waterlily Stem Cell Extract, Tocopherol, Phenoxyethanol, Ethylhexylglycerin",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.6,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "aging": "Signal peptides stimulate collagen and elastin production for firmer, younger-looking skin",
+      "texture": "Polypeptide complex improves skin smoothness and overall texture"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Drunk+Pachyderm+Protini+Polypeptide+Rich+Cream" },
+      { "label": "Sephora", "url": "https://www.example.com/drunk-pachyderm-protini" }
+    ]
+  },
+  {
+    "id": "moisturizer_008",
+    "name": "Water Cream Pore-Minimizing Moisturizer",
+    "brand": "Tatcha Bloom",
+    "price": 48.00,
+    "size_ml": 50,
+    "category": "moisturizer",
+    "skin_types": ["oily", "combination", "normal"],
+    "concerns": ["oiliness", "texture"],
+    "key_ingredients": ["niacinamide", "glycerin"],
+    "full_ingredients": "Water, Glycerin, Dipropylene Glycol, Dimethicone, Niacinamide, Butylene Glycol, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Saccharomyces Ferment Filtrate, Camellia Sinensis Leaf Extract, Oryza Sativa (Rice) Bran Extract, Algae Extract, Sodium Hyaluronate, Inositol, Tocopherol, Carbomer, Sodium Hydroxide, Phenoxyethanol",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": false,
+    "rating": 4.4,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "oiliness": "Weightless water-burst texture delivers hydration while controlling surface oils",
+      "texture": "Niacinamide and botanical extracts refine pore appearance and smooth skin"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Tatcha+Bloom+Water+Cream+Pore+Minimizing+Moisturizer" },
+      { "label": "Sephora", "url": "https://www.example.com/tatcha-bloom-water-cream" }
+    ]
+  },
+  {
+    "id": "moisturizer_009",
+    "name": "Vanicream Lite Lotion",
+    "brand": "VaniSmooth",
+    "price": 11.49,
+    "size_ml": 170,
+    "category": "moisturizer",
+    "skin_types": ["sensitive", "dry", "normal", "acne-prone"],
+    "concerns": ["sensitivity", "dryness", "barrier_damage"],
+    "key_ingredients": ["glycerin", "squalane"],
+    "full_ingredients": "Water, Glycerin, Cetearyl Alcohol, Ceteareth-20, Sorbitol, Squalane, Simethicone, Propylene Glycol, Sodium PCA, Dimethicone, Steareth-2, Ethylhexylglycerin, Butylated Hydroxytoluene",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.3,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "Free of dyes, fragrances, parabens, and lanolin for ultra-sensitive skin",
+      "barrier_damage": "Simple, clean formula moisturizes without any potential barrier irritants"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=VaniSmooth+Vanicream+Lite+Lotion" }
+    ]
+  },
+  {
+    "id": "moisturizer_010",
+    "name": "Ultra Facial Cream with Squalane",
+    "brand": "Kiehl's Peak",
+    "price": 33.50,
+    "size_ml": 50,
+    "category": "moisturizer",
+    "skin_types": ["normal", "dry", "combination"],
+    "concerns": ["dryness", "aging"],
+    "key_ingredients": ["squalane", "glycerin"],
+    "full_ingredients": "Water, Squalane, Glycerin, Cyclohexasiloxane, Sucrose Stearate, Stearyl Alcohol, Myristyl Myristate, PEG-8 Stearate, Pentaerythrityl Tetraethylhexanoate, Prunus Armeniaca (Apricot) Kernel Oil, Persea Gratissima (Avocado) Oil, Tocopherol, Phenoxyethanol, Sodium Hydroxide, Carbomer, Disodium EDTA",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": false,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "dryness": "Squalane and glacial glycoprotein provide long-lasting, deep hydration",
+      "aging": "Apricot kernel oil and vitamin E nourish and protect against environmental aging"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Kiehl%27s+Peak+Ultra+Facial+Cream+Squalane" },
+      { "label": "Nordstrom", "url": "https://www.example.com/kiehls-peak-ultra-facial" }
+    ]
+  },
+  {
+    "id": "moisturizer_011",
+    "name": "Snail Mucin 92 All-in-One Cream",
+    "brand": "COSRX Lab",
+    "price": 15.99,
+    "size_ml": 100,
+    "category": "moisturizer",
+    "skin_types": ["dry", "normal", "sensitive", "combination"],
+    "concerns": ["dryness", "barrier_damage", "redness"],
+    "key_ingredients": ["glycerin", "panthenol"],
+    "full_ingredients": "Snail Secretion Filtrate (92%), Betaine, Cetearyl Alcohol, Caprylic/Capric Triglyceride, Cetearyl Olivate, Sorbitan Olivate, Glycerin, Dimethicone, Panthenol, Arginine, Allantoin, Sodium Hyaluronate, Adenosine, Carbomer, Phenoxyethanol, Ethylhexylglycerin",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "dryness": "92% snail filtrate creates a moisture-locking film for intense all-day hydration",
+      "redness": "Natural glycoproteins and allantoin soothe and calm irritated, red skin"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=COSRX+Lab+Snail+Mucin+92+All+in+One+Cream" }
+    ]
+  },
+  {
+    "id": "moisturizer_012",
+    "name": "Gel Moisturizer with Niacinamide",
+    "brand": "Versed Routine",
+    "price": 14.99,
+    "size_ml": 50,
+    "category": "moisturizer",
+    "skin_types": ["oily", "acne-prone", "combination"],
+    "concerns": ["oiliness", "inflammatory_acne", "texture"],
+    "key_ingredients": ["niacinamide", "hyaluronic_acid", "glycerin"],
+    "full_ingredients": "Water, Propanediol, Glycerin, Niacinamide, Sodium Hyaluronate, Aloe Barbadensis Leaf Juice, Camellia Sinensis Leaf Extract, Chamomilla Recutita (Matricaria) Flower Extract, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Caprylyl Glycol, Ethylhexylglycerin, Phenoxyethanol, Sodium Hydroxide",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.2,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "oiliness": "Lightweight gel-cream balances hydration and oil control with niacinamide",
+      "inflammatory_acne": "Non-comedogenic, acne-safe formula with soothing green tea and chamomile"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Versed+Routine+Gel+Moisturizer+Niacinamide" },
+      { "label": "Target", "url": "https://www.example.com/versed-routine-gel-moisturizer" }
+    ]
+  },
+  {
+    "id": "spf_001",
+    "name": "Ultra Sheer Dry-Touch Sunscreen SPF 55",
+    "brand": "Neutro Skin",
+    "price": 12.99,
+    "size_ml": 88,
+    "category": "spf",
+    "skin_types": ["normal", "oily", "combination"],
+    "concerns": ["aging", "hyperpigmentation", "dark_spots"],
+    "key_ingredients": ["glycerin"],
+    "full_ingredients": "Water, Avobenzone (3%), Homosalate (15%), Octisalate (5%), Octocrylene (10%), Oxybenzone (6%), Glycerin, Diethylhexyl 2,6-Naphthalate, Silica, Dimethicone, BHT, Styrene/Acrylates Copolymer, Ethylhexylglycerin, Phenoxyethanol, Disodium EDTA, Methylisothiazolinone",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": false,
+    "rating": 4.1,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "aging": "Broad-spectrum SPF 55 shields against UVA rays that cause premature aging",
+      "hyperpigmentation": "Daily UV protection prevents darkening of existing pigmentation and new spots"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Neutro+Skin+Ultra+Sheer+Dry+Touch+Sunscreen+SPF+55" },
+      { "label": "Walgreens", "url": "https://www.example.com/neutro-skin-sunscreen" }
+    ]
+  },
+  {
+    "id": "spf_002",
+    "name": "Anthelios Melt-in Milk Sunscreen SPF 60",
+    "brand": "La Roche-Pierre",
+    "price": 24.99,
+    "size_ml": 90,
+    "category": "spf",
+    "skin_types": ["sensitive", "dry", "normal"],
+    "concerns": ["sensitivity", "aging", "redness"],
+    "key_ingredients": ["glycerin", "niacinamide"],
+    "full_ingredients": "Water, Homosalate (15%), Glycerin, Niacinamide, Alcohol Denat., Octocrylene (7%), Silica, Avobenzone (3%), Styrene/Acrylates Copolymer, Dimethicone, Potassium Cetyl Phosphate, Tocopherol, Caprylyl Glycol, Disodium EDTA, Phenoxyethanol, Triethanolamine",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.6,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "Developed for sensitive skin with minimal irritants and high UVA/UVB coverage",
+      "aging": "Very high SPF 60 provides superior anti-aging photoprotection daily"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=La+Roche-Pierre+Anthelios+Melt+in+Milk+Sunscreen+SPF+60" },
+      { "label": "Ulta Beauty", "url": "https://www.example.com/lrp-anthelios-spf60" }
+    ]
+  },
+  {
+    "id": "spf_003",
+    "name": "Mineral UV Defense Sunscreen SPF 50",
+    "brand": "SkinCeutica",
+    "price": 38.00,
+    "size_ml": 50,
+    "category": "spf",
+    "skin_types": ["sensitive", "acne-prone", "dry", "normal"],
+    "concerns": ["sensitivity", "inflammatory_acne", "aging"],
+    "key_ingredients": ["zinc_oxide", "niacinamide"],
+    "full_ingredients": "Water, Cyclopentasiloxane, Zinc Oxide (15.8%), Niacinamide, Titanium Dioxide (4.8%), Isododecane, Dimethicone, Glycerin, PEG-10 Dimethicone, Aluminum Hydroxide, Stearic Acid, Phenoxyethanol, Triethoxycaprylylsilane, Triethoxysilylethyl Polydimethylsiloxyethyl Hexyl Dimethicone, Tocopherol",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.5,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "100% mineral (zinc oxide + titanium dioxide) sits on skin instead of absorbing, ideal for reactive skin",
+      "inflammatory_acne": "Non-comedogenic mineral filters protect without triggering new breakouts"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=SkinCeutica+Mineral+UV+Defense+Sunscreen+SPF+50" },
+      { "label": "Sephora", "url": "https://www.example.com/skinceutica-mineral-spf50" }
+    ]
+  },
+  {
+    "id": "spf_004",
+    "name": "Unseen Sunscreen SPF 40",
+    "brand": "Supergarden",
+    "price": 36.00,
+    "size_ml": 40,
+    "category": "spf",
+    "skin_types": ["oily", "combination", "normal", "acne-prone"],
+    "concerns": ["oiliness", "aging", "texture"],
+    "key_ingredients": ["glycerin"],
+    "full_ingredients": "Water, Dimethicone, Avobenzone (3%), Homosalate (8%), Octisalate (5%), Octocrylene (5%), Silica, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethicone/PEG-10/15 Crosspolymer, Tocopheryl Acetate, Glycerin, Camellia Sinensis Leaf Extract, Chrysanthemum Parthenium (Feverfew) Extract, Phenoxyethanol, BHT",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.7,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "oiliness": "Totally invisible, oil-free finish makes it perfect under makeup for oily skin",
+      "aging": "Broad-spectrum SPF 40 with antioxidants protects against photo-aging"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Supergarden+Unseen+Sunscreen+SPF+40" },
+      { "label": "Sephora", "url": "https://www.example.com/supergarden-unseen-spf40" }
+    ]
+  },
+  {
+    "id": "spf_005",
+    "name": "Aloe Soothing Sun Cream SPF 50+",
+    "brand": "COSRX Lab",
+    "price": 14.99,
+    "size_ml": 50,
+    "category": "spf",
+    "skin_types": ["sensitive", "dry", "normal"],
+    "concerns": ["sensitivity", "dryness", "redness"],
+    "key_ingredients": ["centella_asiatica", "glycerin"],
+    "full_ingredients": "Water, Aloe Barbadensis Leaf Extract (43%), Ethylhexyl Methoxycinnamate, Glycerin, Butylene Glycol, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Centella Asiatica Extract, Dipropylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Methylpropanediol, Cyclomethicone, Cetearyl Alcohol, Sorbitan Olivate, Carbomer, Phenoxyethanol, Ethylhexylglycerin",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.3,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "Aloe and centella asiatica soothe and protect delicate, reactive skin from UV",
+      "dryness": "Hydrating aloe base prevents the drying effect common with many sunscreens"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=COSRX+Lab+Aloe+Soothing+Sun+Cream+SPF+50" }
+    ]
+  },
+  {
+    "id": "spf_006",
+    "name": "Clear Face Liquid Lotion Sunscreen SPF 50",
+    "brand": "Neutro Skin",
+    "price": 10.99,
+    "size_ml": 88,
+    "category": "spf",
+    "skin_types": ["oily", "acne-prone", "combination"],
+    "concerns": ["inflammatory_acne", "oiliness", "aging"],
+    "key_ingredients": ["glycerin"],
+    "full_ingredients": "Water, Avobenzone (3%), Homosalate (10%), Octisalate (5%), Octocrylene (2.8%), Glycerin, Dimethicone, Silica, Dimethicone/Vinyl Dimethicone Crosspolymer, Sodium Acrylates Copolymer, Phenoxyethanol, BHT, Disodium EDTA, Ethylhexylglycerin",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.0,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "inflammatory_acne": "Formulated for acne-prone skin with no pore-clogging oils or heavy emollients",
+      "oiliness": "Dry-touch, oil-free finish prevents midday greasiness and shine"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Neutro+Skin+Clear+Face+Liquid+Lotion+Sunscreen+SPF+50" }
+    ]
+  },
+  {
+    "id": "spf_007",
+    "name": "Mineral Body Sunscreen Lotion SPF 30",
+    "brand": "Blue Lizard Sun",
+    "price": 15.99,
+    "size_ml": 148,
+    "category": "spf",
+    "skin_types": ["sensitive", "normal", "dry"],
+    "concerns": ["sensitivity", "aging"],
+    "key_ingredients": ["zinc_oxide", "glycerin"],
+    "full_ingredients": "Water, Zinc Oxide (10%), Octinoxate (7.5%), Glycerin, C12-15 Alkyl Benzoate, Cetyl Dimethicone, Isopropyl Isostearate, Dimethicone, Cetyl PEG/PPG-10/1 Dimethicone, Tocopheryl Acetate, Aloe Barbadensis Leaf Juice, Chrysanthemum Parthenium (Feverfew) Extract, Phenoxyethanol, Sodium Chloride",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.2,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "Zinc-based mineral formula is gentle on delicate and eczema-prone skin",
+      "aging": "Reliable daily SPF 30 protection prevents cumulative UV-induced aging"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Blue+Lizard+Sun+Mineral+Body+Sunscreen+Lotion+SPF+30" }
+    ]
+  },
+  {
+    "id": "spf_008",
+    "name": "UV Aqua Rich Watery Essence SPF 50+",
+    "brand": "Biore Aqua",
+    "price": 13.49,
+    "size_ml": 50,
+    "category": "spf",
+    "skin_types": ["oily", "combination", "normal"],
+    "concerns": ["oiliness", "aging", "hyperpigmentation"],
+    "key_ingredients": ["hyaluronic_acid", "glycerin"],
+    "full_ingredients": "Water, Ethylhexyl Methoxycinnamate, Lauryl Methacrylate/Sodium Methacrylate Crosspolymer, Glycerin, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Alcohol, Sodium Hyaluronate, Royal Jelly Extract, BG, Dimethicone, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Agar, Sodium Hydroxide, EDTA-2Na, BHT, Phenoxyethanol",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": false,
+    "rating": 4.6,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "oiliness": "Ultra-lightweight watery essence absorbs like skincare, not sunscreen",
+      "hyperpigmentation": "High SPF 50+ prevents UV-triggered melanin overproduction that darkens spots"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=Biore+Aqua+UV+Aqua+Rich+Watery+Essence+SPF+50" },
+      { "label": "Amazon", "url": "https://www.example.com/biore-aqua-watery-essence" }
+    ]
+  },
+  {
+    "id": "spf_009",
+    "name": "Zinc Oxide Mineral Sunscreen SPF 45",
+    "brand": "EltaMD Pure",
+    "price": 29.99,
+    "size_ml": 48,
+    "category": "spf",
+    "skin_types": ["sensitive", "acne-prone", "combination", "normal"],
+    "concerns": ["sensitivity", "inflammatory_acne", "aging", "redness"],
+    "key_ingredients": ["zinc_oxide", "niacinamide", "hyaluronic_acid"],
+    "full_ingredients": "Water, Zinc Oxide (9%), Octinoxate (7.5%), Niacinamide, Sodium Hyaluronate, Tocopheryl Acetate, Lactic Acid, Oleth-3 Phosphate, Dimethicone, Cyclomethicone, Purified Water, Phenoxyethanol, Iodopropynyl Butylcarbamate, BHT",
+    "avg_daily_usage_ml": 2,
+    "fragrance_free": true,
+    "rating": 4.8,
+    "image_url": "/placeholder-product.png",
+    "why_good_for": {
+      "sensitivity": "Dermatologist-recommended zinc formula for post-procedure and ultra-sensitive skin",
+      "inflammatory_acne": "Niacinamide and zinc calm inflammation while providing broad-spectrum UV defense"
+    },
+    "buy_links": [
+      { "label": "Search", "url": "https://www.google.com/search?q=EltaMD+Pure+Zinc+Oxide+Mineral+Sunscreen+SPF+45" },
+      { "label": "Dermstore", "url": "https://www.example.com/eltamd-pure-spf45" }
+    ]
+  }
+]
