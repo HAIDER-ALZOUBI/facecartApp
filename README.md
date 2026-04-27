@@ -1,6 +1,6 @@
 # Facecart
 
-AI-powered skincare shopping validator — not a medical diagnosis tool, not a store.
+AI-powered skincare shopping validator - not a medical diagnosis tool, not a store.
 
 Facecart helps you build a validated, conflict-free, budget-optimized skincare routine and generates a purchase-validated cart with external buy links. The AI only extracts your shopping profile and strategy; a deterministic rules engine validates products and links out to buy.
 
